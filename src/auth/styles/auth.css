@@ -1,0 +1,69 @@
+:root{
+    --color-primario: #F2F6D0;
+    --color-secundario: #EFDCAB;
+    --color-terciario: #D98324;
+    --color-cuartiario: #443627;
+}
+
+.auth-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primario);
+    height: 100vh;
+    
+}
+
+.form-container {
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align: center;
+    padding-top: 40px;
+}
+h2, label{
+    color: var(--color-cuartiario);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    height: 350px;
+    width: 400px;
+}
+.container-form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+}
+.form-group{
+    display: grid;
+    grid-template-columns: 25% 60% 15%;
+}
+.button-group{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+}
+.button-login{
+    background-color: var(--color-terciario);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+@media (max-width: 500px){
+    form{
+        width: 300px;
+        height: 300px;
+    }
+}
