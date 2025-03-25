@@ -9,7 +9,22 @@ body{
 #root{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     box-sizing: border-box;
     height: 100%;
+}
+.button-home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+.button-home{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #443627;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }

@@ -1,0 +1,104 @@
+.container-app-examen{
+    display: flex;
+    flex-direction: column;
+  }
+  .question-bar{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+  }
+  .buttom-controller{
+    color: white;
+    background-color: rgb(122, 122, 122);
+    border: 0;
+    width: 70px;
+    height: 40px;
+  }
+  .buttom-controller:hover{
+    cursor: pointer;
+  }
+  .question-bar-text{
+    margin: 0;
+  }
+  .container-question{
+    display: flex;
+    flex-direction: column;
+  }
+  .container-question img{
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    margin: 40px 0px;
+  }
+  .container-question-answers{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .container-question-answers-p{
+    border-radius: 5px;
+    background-color: rgb(103, 103, 103);
+    color: white;
+    min-width: 200px;
+    max-width: 200px;
+    text-align: center;
+    align-content: center;
+    padding: 5px 1px;
+    user-select: none;
+  }
+  .container-question-answers p:hover{
+    cursor: pointer
+  }
+  .selected{
+    background-color: black;
+  }
+  .question-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .question-select {
+    padding: 5px 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .question-select:focus {
+    outline: none;
+    border-color: #4CAF50;
+  }
+
+  .btn-resultados {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-resultados:hover {
+    background-color: #45a049;
+  }
+
+  @media (max-width: 800px) {
+    .container-question{
+      height: 480px;
+    }
+    .container-question-answers{
+      flex-direction: column;
+      align-items: center;
+    }
+    .container-app-examen{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .question-bar{
+      margin-top: 30px;
+    }
+  }

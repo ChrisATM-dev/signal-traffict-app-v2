@@ -1,0 +1,62 @@
+.tabla-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+}
+
+table{
+    margin: 0 10%;
+}
+
+thead tr{
+    text-align: center;
+    outline: 2px solid rgb(160 160 160);
+}
+
+tbody tr{
+    outline: 1px solid rgb(160 160 160);
+}
+tbody td{
+    border-left: 1px solid rgb(160 160 160);
+    padding: 3px 10px;
+}
+
+.correcta{
+    background-color: rgb(150, 255, 150);
+}
+.incorrecta{
+    background-color: rgb(255, 150, 150);
+}
+
+.container-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+td img{
+    width: 50px;
+    height: 50px;
+}
+
+.container-salir{
+    display: flex;
+    justify-content: end;
+    margin: 20px 10%;
+}
+
+.container-estadisticas{
+    display: flex;
+    justify-content: end;
+}
+.container-estadisticas-cabecera, thead{
+    background-color: rgb(160 160 160);    
+}
+
+@media (max-width: 500px) {
+    table{
+        margin: 0;
+    }
+  }
